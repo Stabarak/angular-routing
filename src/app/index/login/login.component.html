@@ -1,0 +1,19 @@
+<div>
+  <div>
+    <input type="text" placeholder="username" [(ngModel)]="postData.username" />
+  </div>
+  <div>
+    <input
+      type="password"
+      placeholder="password"
+      [(ngModel)]="postData.password"
+    />
+  </div>
+  <div *ngIf="errorText">
+    {{ errorText }}
+  </div>
+  <div><button (click)="loginUser()">Login</button></div>
+  <hr />
+  <br />
+  <a routerLink="/forgot-password">Forgot Password?</a>
+</div>

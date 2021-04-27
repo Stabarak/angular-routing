@@ -1,0 +1,11 @@
+<nav class="navbar">
+  <div class="navbar_items">
+    <a class="mr-auto">Logo</a>
+    <a routerLink="/">Dashboard</a>
+    <a routerLink="/products">Products</a>
+    <a routerLink="/settings">Settings</a>
+    <a (click)="logout()">Logout</a>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>

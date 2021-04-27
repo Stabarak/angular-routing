@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  &_items {
+    display: flex;
+    width: 100%;
+    > a {
+      text-decoration: none;
+      color: blue;
+      background-color: black;
+      padding: 20px;
+      font-size: 1.125rem;
+    }
+  }
+}
+
+.mr-auto {
+  margin-right: auto;
+}
